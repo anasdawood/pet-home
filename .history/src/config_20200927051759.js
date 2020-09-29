@@ -38,7 +38,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb://localhost/pethouse-dev',
+      uri: 'mongodb://localhost/doghouse-dev',
       options: {
         debug: true
       }
@@ -48,7 +48,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://localhost/pethouse'
+      uri: process.env.MONGODB_URI || 'mongodb://localhost/doghouse'
     }
   }
 }
