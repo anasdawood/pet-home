@@ -38,7 +38,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb+srv://admin:admin123@cluster0.koc4p.azure.mongodb.net/pethouse?retryWrites=true&w=majority',
+      uri: 'mongo_connection',
       options: {
         debug: true
       }
@@ -48,7 +48,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: 'mongodb+srv://admin:admin123@cluster0.koc4p.azure.mongodb.net/pethouse?retryWrites=true&w=majority'
+      uri: 'mongo_connection'
     }
   }
 }
