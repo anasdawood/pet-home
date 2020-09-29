@@ -48,7 +48,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb+srv://admin:admin123@cluster0.koc4p.azure.mongodb.net/pethouse?retryWrites=true&w=majority'
+      uri: process.env.MONGODB_URI || 'mongodb://localhost/pethouse'
     }
   }
 }
