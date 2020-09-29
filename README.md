@@ -6,6 +6,8 @@ See the API's [documentation](DOCS.md).
 
 This app is built using Node js. It performs the basic CRUD operation on a Pet Object.
 
+The app uses MongoDB to save and retrive the data.
+
 
 ## Commands
 
