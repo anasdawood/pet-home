@@ -81,7 +81,7 @@ You can customize the `src` and `api` directories.
 ```
 src/
 ├─ api/
-│  ├─ user/
+│  ├─ pets/
 │  │  ├─ controller.js
 │  │  ├─ index.js
 │  │  ├─ index.test.js
@@ -90,11 +90,8 @@ src/
 │  └─ index.js
 ├─ services/
 │  ├─ express/
-│  ├─ facebook/
 │  ├─ mongoose/
-│  ├─ passport/
-│  ├─ sendgrid/
-│  └─ your-service/
+│  └─ response/
 ├─ app.js
 ├─ config.js
 └─ index.js
@@ -104,17 +101,17 @@ src/
 
 Here is where the API endpoints are defined. Each API has its own folder.
 
-#### src/api/some-endpoint/model.js
+#### src/api/pets/model.js
 
 It defines the Mongoose schema and model for the API endpoint. Any changes to the data model should be done here.
 
-#### src/api/some-endpoint/controller.js
+#### src/api/pets/controller.js
 
 This is the API controller file. It defines the main router middlewares which use the API model.
 
-#### src/api/some-endpoint/index.js
+#### src/api/pets/index.js
 
-This is the entry file of the API. It defines the routes using, along other middlewares (like session, validation etc.), the middlewares defined in the `some-endpoint.controller.js` file.
+This is the entry file of the API. It defines the routes using, along other middlewares (like session, validation etc.), the middlewares defined in the `pets.controller.js` file.
 
 ### services/
 
